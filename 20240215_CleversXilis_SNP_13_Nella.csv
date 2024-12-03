@@ -1,0 +1,160 @@
+Program,xPONENT,,MAGPIX
+Build,4.3.229.0
+Date,02/15/2024,1:09 PM
+
+SN,MAGPX19059721
+Batch,20240215_CleversXilis_SNP_13
+Version,1
+Operator,lizzy
+ComputerName,DESKTOP-LRL0058
+Country Code,7F
+ProtocolName,Diagnostiek Genotyping ID-panel
+ProtocolVersion,1
+ProtocolDescription,Identificatie-panel
+ProtocolDevelopingCompany,PMC_LKO
+SampleWash,Off
+SampleVolume,50 uL
+BatchStartTime,2/15/2024 2:28:33 PM
+BatchStopTime,2/15/2024 3:04:07 PM
+BatchDescription,<None>
+ProtocolPlate,Name,PCR 96-well plate,Type,96,Plates,1
+ProtocolMicrosphere,Map,BP 50 regions,Type,MagPlex,Count,40
+ProtocolAnalysis,Off
+NormBead,None
+ProtocolHeater,Temp,37
+
+Most Recent Calibration and Verification Results:
+Last CAL Calibration,Passed 02/15/2024 13:16:03
+Last VER Verification,Passed 02/15/2024 13:17:07
+Last Fluidics Test,Passed 02/15/2024 13:18:27
+
+CALInfo:
+Calibrator
+Lot,ExpirationDate,CalibrationTime,CL1Temp,CL2Temp,RP1LongTemp,RP1ShortTemp,CL1Current,CL2Current,RP1LongCurrent,RP1ShortCurrent,CL1Factor,CL2Factor,RP1LongFactor,RP1ShortFactor,Result,MachineSerialNo
+B98915,12/19/2024,2/15/2024 1:16:03 PM,24.4,24.4,24.4,24.4,210,221,358,358,0.00703,0.00702,0.00388,0.11524,Pass,MAGPX19059721
+
+
+Samples,57,Min Events,50,Per Bead
+
+Results
+
+DataType:,Median
+Location,Sample,13BA_A013,7BA_A014,9B_A015,4BA_A018,13BB_A019,12B_A022,15A_A025,14B_A026,1CA_A027,16A_A028,19B_A029,11A_A033,16B_A035,21B_A036,10BB_A037,3A_A038,19A_A039,18A_A042,8BA_A043,14A_A045,5B_A046,5A_A047,21A_A048,8BB_A051,11B_A052,9A_A053,3B_A054,1CB_A056,15B_A057,10BA_A062,17BB_A063,12A_A064,17BA_A065,20BA_A066,6A_A067,20BB_A072,18B_A075,7BB_A076,4BB_A077,6B_A078,Total Events
+53(1,E7),S_XBV_H2O_1_x_x_x_R13,434,427,442,NaN,2743,3936,699,504,NaN,1046.5,481,492,474.5,1667,533,720.5,452,461.5,578,460,515,506,549,2482,643.5,481,1963,1582,522.5,487,457,576,473,801,521,NaN,442,494.5,1569,529.5,8509
+54(1,F7),S_XBV_H2O_2_x_x_x_R13,409.5,387.5,459,NaN,892.5,438,456,468,NaN,1489,447.5,1183,545,479.5,483,1111.5,874,416,954,436,469,589,799,464.5,1123,457,2823,884,509,456.5,448.5,405,571,1176.5,509,NaN,424,455,844,492,8501
+55(1,G7),Nella1,3638.5,2773.5,3664,NaN,2619,4033,3394,1423,NaN,3114,1472.5,1634,1113,1805,4021,2119.5,2382,1025.5,4105,537,1647,1940.5,3202,2177,2246,1141,2644,2965,680,681,2668,4460,3180.5,4322,631,NaN,4500,2388,3154,2341,7567
+56(1,H7),Nella2,3628,2636,3388,NaN,2609,3978.5,2389,820,NaN,3225,1969,1595,927,519,2896,513.5,606,3990,4813,966.5,1664.5,1921.5,4225,2367,2338,895,4039,3812,2025,2412,2767,3836.5,3082.5,5312,1324,NaN,3378.5,2408,6126.5,1520.5,8615
+57(1,A8),Nella3,3527.5,1003,2718,NaN,2691,5779,818,946.5,6597,2332.5,609,517,1740.5,2359,4069,2016,3431,5077,2626.5,1219.5,639.5,2831,671.5,2950.5,3212,3353,2473,4050,3056,718.5,2662,1083,3178,3343.5,1425,NaN,897,3515,5492,1626,8546
+
+DataType:,Net MFI
+Location,Sample,13BA_A013,7BA_A014,9B_A015,4BA_A018,13BB_A019,12B_A022,15A_A025,14B_A026,1CA_A027,16A_A028,19B_A029,11A_A033,16B_A035,21B_A036,10BB_A037,3A_A038,19A_A039,18A_A042,8BA_A043,14A_A045,5B_A046,5A_A047,21A_A048,8BB_A051,11B_A052,9A_A053,3B_A054,1CB_A056,15B_A057,10BA_A062,17BB_A063,12A_A064,17BA_A065,20BA_A066,6A_A067,20BB_A072,18B_A075,7BB_A076,4BB_A077,6B_A078,Total Events
+53(1,E7),S_XBV_H2O_1_x_x_x_R13,434,427,442,NaN,2743,3936,699,504,NaN,1046.5,481,492,474.5,1667,533,720.5,452,461.5,578,460,515,506,549,2482,643.5,481,1963,1582,522.5,487,457,576,473,801,521,NaN,442,494.5,1569,529.5,8509
+54(1,F7),S_XBV_H2O_2_x_x_x_R13,409.5,387.5,459,NaN,892.5,438,456,468,NaN,1489,447.5,1183,545,479.5,483,1111.5,874,416,954,436,469,589,799,464.5,1123,457,2823,884,509,456.5,448.5,405,571,1176.5,509,NaN,424,455,844,492,8501
+55(1,G7),Nella1,3638.5,2773.5,3664,NaN,2619,4033,3394,1423,NaN,3114,1472.5,1634,1113,1805,4021,2119.5,2382,1025.5,4105,537,1647,1940.5,3202,2177,2246,1141,2644,2965,680,681,2668,4460,3180.5,4322,631,NaN,4500,2388,3154,2341,7567
+56(1,H7),Nella2,3628,2636,3388,NaN,2609,3978.5,2389,820,NaN,3225,1969,1595,927,519,2896,513.5,606,3990,4813,966.5,1664.5,1921.5,4225,2367,2338,895,4039,3812,2025,2412,2767,3836.5,3082.5,5312,1324,NaN,3378.5,2408,6126.5,1520.5,8615
+57(1,A8),Nella3,3527.5,1003,2718,NaN,2691,5779,818,946.5,6597,2332.5,609,517,1740.5,2359,4069,2016,3431,5077,2626.5,1219.5,639.5,2831,671.5,2950.5,3212,3353,2473,4050,3056,718.5,2662,1083,3178,3343.5,1425,NaN,897,3515,5492,1626,8546
+
+DataType:,Count
+Location,Sample,13BA_A013,7BA_A014,9B_A015,4BA_A018,13BB_A019,12B_A022,15A_A025,14B_A026,1CA_A027,16A_A028,19B_A029,11A_A033,16B_A035,21B_A036,10BB_A037,3A_A038,19A_A039,18A_A042,8BA_A043,14A_A045,5B_A046,5A_A047,21A_A048,8BB_A051,11B_A052,9A_A053,3B_A054,1CB_A056,15B_A057,10BA_A062,17BB_A063,12A_A064,17BA_A065,20BA_A066,6A_A067,20BB_A072,18B_A075,7BB_A076,4BB_A077,6B_A078,Total Events
+53(1,E7),S_XBV_H2O_1_x_x_x_R13,157,131,147,0,271,217,232,227,0,240,225,223,246,283,261,230,170,212,249,263,286,285,297,271,198,253,349,3,324,266,216,269,249,3,303,0,275,324,6,348,8509
+54(1,F7),S_XBV_H2O_2_x_x_x_R13,142,136,148,0,238,191,201,211,0,251,234,231,263,246,297,268,197,187,259,271,278,296,303,236,225,233,319,8,340,186,208,273,292,4,317,0,289,389,1,333,8501
+55(1,G7),Nella1,106,140,127,0,195,200,176,189,0,259,206,180,213,215,255,216,165,146,242,167,277,302,289,178,185,223,275,1,227,159,238,271,304,3,220,0,293,343,1,381,7567
+56(1,H7),Nella2,131,119,139,0,237,218,210,190,0,277,238,217,205,179,292,182,131,198,233,196,298,330,354,239,221,217,349,2,372,256,279,338,338,3,308,0,334,401,2,382,8615
+57(1,A8),Nella3,170,96,149,0,227,207,161,206,1,308,203,190,254,278,299,241,236,203,246,236,234,340,222,240,261,279,315,7,392,178,253,242,340,6,315,0,235,397,1,378,8546
+
+DataType:,Avg Net MFI
+Sample,13BA_A013,7BA_A014,9B_A015,4BA_A018,13BB_A019,12B_A022,15A_A025,14B_A026,1CA_A027,16A_A028,19B_A029,11A_A033,16B_A035,21B_A036,10BB_A037,3A_A038,19A_A039,18A_A042,8BA_A043,14A_A045,5B_A046,5A_A047,21A_A048,8BB_A051,11B_A052,9A_A053,3B_A054,1CB_A056,15B_A057,10BA_A062,17BB_A063,12A_A064,17BA_A065,20BA_A066,6A_A067,20BB_A072,18B_A075,7BB_A076,4BB_A077,6B_A078
+S_XBV_H2O_1_x_x_x_R13,434,427,442,NaN,2743,3936,699,504,NaN,1046.5,481,492,474.5,1667,533,720.5,452,461.5,578,460,515,506,549,2482,643.5,481,1963,1582,522.5,487,457,576,473,801,521,NaN,442,494.5,1569,529.5
+S_XBV_H2O_2_x_x_x_R13,409.5,387.5,459,NaN,892.5,438,456,468,NaN,1489,447.5,1183,545,479.5,483,1111.5,874,416,954,436,469,589,799,464.5,1123,457,2823,884,509,456.5,448.5,405,571,1176.5,509,NaN,424,455,844,492
+Nella1,3638.5,2773.5,3664,NaN,2619,4033,3394,1423,NaN,3114,1472.5,1634,1113,1805,4021,2119.5,2382,1025.5,4105,537,1647,1940.5,3202,2177,2246,1141,2644,2965,680,681,2668,4460,3180.5,4322,631,NaN,4500,2388,3154,2341
+Nella2,3628,2636,3388,NaN,2609,3978.5,2389,820,NaN,3225,1969,1595,927,519,2896,513.5,606,3990,4813,966.5,1664.5,1921.5,4225,2367,2338,895,4039,3812,2025,2412,2767,3836.5,3082.5,5312,1324,NaN,3378.5,2408,6126.5,1520.5
+Nella3,3527.5,1003,2718,NaN,2691,5779,818,946.5,6597,2332.5,609,517,1740.5,2359,4069,2016,3431,5077,2626.5,1219.5,639.5,2831,671.5,2950.5,3212,3353,2473,4050,3056,718.5,2662,1083,3178,3343.5,1425,NaN,897,3515,5492,1626
+
+DataType:,Units
+Analyte:,13BA_A013,7BA_A014,9B_A015,4BA_A018,13BB_A019,12B_A022,15A_A025,14B_A026,1CA_A027,16A_A028,19B_A029,11A_A033,16B_A035,21B_A036,10BB_A037,3A_A038,19A_A039,18A_A042,8BA_A043,14A_A045,5B_A046,5A_A047,21A_A048,8BB_A051,11B_A052,9A_A053,3B_A054,1CB_A056,15B_A057,10BA_A062,17BB_A063,12A_A064,17BA_A065,20BA_A066,6A_A067,20BB_A072,18B_A075,7BB_A076,4BB_A077,6B_A078
+BeadID:,13,14,15,18,19,22,25,26,27,28,29,33,35,36,37,38,39,42,43,45,46,47,48,51,52,53,54,56,57,62,63,64,65,66,67,72,75,76,77,78
+Units:,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+
+DataType:,Per Bead Count
+Analyte:,13BA_A013,7BA_A014,9B_A015,4BA_A018,13BB_A019,12B_A022,15A_A025,14B_A026,1CA_A027,16A_A028,19B_A029,11A_A033,16B_A035,21B_A036,10BB_A037,3A_A038,19A_A039,18A_A042,8BA_A043,14A_A045,5B_A046,5A_A047,21A_A048,8BB_A051,11B_A052,9A_A053,3B_A054,1CB_A056,15B_A057,10BA_A062,17BB_A063,12A_A064,17BA_A065,20BA_A066,6A_A067,20BB_A072,18B_A075,7BB_A076,4BB_A077,6B_A078
+BeadID:,13,14,15,18,19,22,25,26,27,28,29,33,35,36,37,38,39,42,43,45,46,47,48,51,52,53,54,56,57,62,63,64,65,66,67,72,75,76,77,78
+Per Bead:,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50
+
+DataType:,Dilution Factor
+Location,Sample,Dilution Factor
+53(1,E7),S_XBV_H2O_1_x_x_x_R13,1
+54(1,F7),S_XBV_H2O_2_x_x_x_R13,1
+55(1,G7),Nella1,1
+56(1,H7),Nella2,1
+57(1,A8),Nella3,1
+
+
+DataType:,Analysis Types
+Analyte:,13BA_A013,7BA_A014,9B_A015,4BA_A018,13BB_A019,12B_A022,15A_A025,14B_A026,1CA_A027,16A_A028,19B_A029,11A_A033,16B_A035,21B_A036,10BB_A037,3A_A038,19A_A039,18A_A042,8BA_A043,14A_A045,5B_A046,5A_A047,21A_A048,8BB_A051,11B_A052,9A_A053,3B_A054,1CB_A056,15B_A057,10BA_A062,17BB_A063,12A_A064,17BA_A065,20BA_A066,6A_A067,20BB_A072,18B_A075,7BB_A076,4BB_A077,6B_A078
+AnalysisType,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None
+
+DataType:,Audit Logs
+UserId,Date,Message
+
+DataType:,Warnings/Errors
+Location,Status,Message
+1,A1,Warning,The acquisition had at least one region that did not reach the specified count.
+1,B1,Warning,The acquisition had at least one region that did not reach the specified count.
+1,C1,Warning,The acquisition had at least one region that did not reach the specified count.
+1,D1,Warning,The acquisition had at least one region that did not reach the specified count.
+1,E1,Warning,The acquisition had at least one region that did not reach the specified count.
+1,F1,Warning,The acquisition had at least one region that did not reach the specified count.
+1,G1,Warning,The acquisition had at least one region that did not reach the specified count.
+1,H1,Warning,The acquisition had at least one region that did not reach the specified count.
+1,A2,Warning,The acquisition had at least one region that did not reach the specified count.
+1,B2,Warning,The acquisition had at least one region that did not reach the specified count.
+1,C2,Warning,The acquisition had at least one region that did not reach the specified count.
+1,D2,Warning,The acquisition had at least one region that did not reach the specified count.
+1,E2,Warning,The acquisition had at least one region that did not reach the specified count.
+1,F2,Warning,The acquisition had at least one region that did not reach the specified count.
+1,G2,Warning,The acquisition had at least one region that did not reach the specified count.
+1,H2,Warning,The acquisition had at least one region that did not reach the specified count.
+1,A3,Warning,The acquisition had at least one region that did not reach the specified count.
+1,B3,Warning,The acquisition had at least one region that did not reach the specified count.
+1,C3,Warning,The acquisition had at least one region that did not reach the specified count.
+1,D3,Warning,The acquisition had at least one region that did not reach the specified count.
+1,E3,Warning,The acquisition had at least one region that did not reach the specified count.
+1,F3,Warning,The acquisition had at least one region that did not reach the specified count.
+1,G3,Warning,The acquisition had at least one region that did not reach the specified count.
+1,H3,Warning,The acquisition had at least one region that did not reach the specified count.
+1,A4,Warning,The acquisition had at least one region that did not reach the specified count.
+1,B4,Warning,The acquisition had at least one region that did not reach the specified count.
+1,C4,Warning,The acquisition had at least one region that did not reach the specified count.
+1,D4,Warning,The acquisition had at least one region that did not reach the specified count.
+1,E4,Warning,The acquisition had at least one region that did not reach the specified count.
+1,F4,Warning,The acquisition had at least one region that did not reach the specified count.
+1,G4,Warning,The acquisition had at least one region that did not reach the specified count.
+1,H4,Warning,The acquisition had at least one region that did not reach the specified count.
+1,A5,Warning,The acquisition had at least one region that did not reach the specified count.
+1,B5,Warning,The acquisition had at least one region that did not reach the specified count.
+1,C5,Warning,The acquisition had at least one region that did not reach the specified count.
+1,D5,Warning,The acquisition had at least one region that did not reach the specified count.
+1,E5,Warning,The acquisition had at least one region that did not reach the specified count.
+1,F5,Warning,The acquisition had at least one region that did not reach the specified count.
+1,G5,Warning,The acquisition had at least one region that did not reach the specified count.
+1,H5,Warning,The acquisition had at least one region that did not reach the specified count.
+1,A6,Warning,The acquisition had at least one region that did not reach the specified count.
+1,B6,Warning,The acquisition had at least one region that did not reach the specified count.
+1,C6,Warning,The acquisition had at least one region that did not reach the specified count.
+1,D6,Warning,The acquisition had at least one region that did not reach the specified count.
+1,E6,Warning,The acquisition had at least one region that did not reach the specified count.
+1,F6,Warning,The acquisition had at least one region that did not reach the specified count.
+1,G6,Warning,The acquisition had at least one region that did not reach the specified count.
+1,H6,Warning,The acquisition had at least one region that did not reach the specified count.
+1,A7,Warning,The acquisition had at least one region that did not reach the specified count.
+1,B7,Warning,The acquisition had at least one region that did not reach the specified count.
+1,C7,Warning,The acquisition had at least one region that did not reach the specified count.
+1,D7,Warning,The acquisition had at least one region that did not reach the specified count.
+1,E7,Warning,The acquisition had at least one region that did not reach the specified count.
+1,F7,Warning,The acquisition had at least one region that did not reach the specified count.
+1,G7,Warning,The acquisition had at least one region that did not reach the specified count.
+1,H7,Warning,The acquisition had at least one region that did not reach the specified count.
+1,A8,Warning,The acquisition had at least one region that did not reach the specified count.
+
+-- CRC --
+CRC32: 6F9A0C1A
