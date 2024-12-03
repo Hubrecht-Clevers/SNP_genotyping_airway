@@ -1,20 +1,20 @@
+#####################################################################################################
+#                                                                                                   #
+#                            SNP profiling between DNA and scRNA samples                            #
+#                                          Gijs van Son                                             #
+#                                      December 3rd 2024                                            #
+#                               g.j.f.vanson@prinsesmaximacentrum.nl                                #
+#                                                                                                   #
+#####################################################################################################
+
+# set up the environment
 library("VariantAnnotation")
 library("RColorBrewer")
 library("ggplot2")
 library("ggpubr")
 library("cowplot")
 
-
-setwd("/Users/gijsvanson/OneDrive - Prinses Maxima Centrum/Nella/SC_seq/SNP_profiles/")
-
-dist2d <- function(a,b,c) {
-  v1 <- b - c
-  v2 <- a - b
-  m <- cbind(v1,v2)
-  d <- abs(det(m))/sqrt(sum(v1*v1))
-  return(d)
-} 
-
+setwd("#############")
 myColors <- c("blue","green","red","white")
 names(myColors) <- c("0/0","0/1","1/1",".")
 
@@ -23,6 +23,15 @@ names(myValues) <- c("0/0","0/1","1/1",".")
 
 matrixcols2 <-  colorRampPalette(c("#377eb8","#4daf4a","#e41a1c"))
 matrixcols3 <-  colorRampPalette(c("#377eb8","#4daf4a","#e41a1c"))
+
+######## functions ############
+dist2d <- function(a,b,c) {
+  v1 <- b - c
+  v2 <- a - b
+  m <- cbind(v1,v2)
+  d <- abs(det(m))/sqrt(sum(v1*v1))
+  return(d)
+} 
 
 get_info_from_file <- function(inputfile){
   # have a look at what the file looks like, searching for the starting rows off all variable fields
@@ -55,9 +64,9 @@ get_info_from_file <- function(inputfile){
   assign("results_Dilution_factor", results_Dilution_factor, envir = .GlobalEnv)
   
 }
-get_info_from_file(inputfile = "20240215_CleversXilis_SNP_13_Nella.csv")
 
 genotype_classification <- function(sample_in, design,  callibrator_file_name, method = "euclidian"){
+  # function to assign genotypes to a sample based on a callibrated LUMINEX assay. 
   genotype_frame <- data.frame(matrix(NA, nrow = length(sample_in$Sample), ncol = length(design$ID)))
   group_frame <- data.frame(matrix(NA, nrow = length(sample_in$Sample), ncol = length(design$ID)))
   rownames(genotype_frame) <- sample_in$Sample
@@ -108,11 +117,16 @@ genotype_classification <- function(sample_in, design,  callibrator_file_name, m
     }}
   return(list(genotype_frame, group_frame))
 }
-design <- read.csv("/Users/gijsvanson/OneDrive - Prinses Maxima Centrum/General/SNP_Profiling/my_app/Resources/design.txt")
+
+####### Load data ###########
+get_info_from_file(inputfile = "20240215_CleversXilis_SNP_13_Nella.csv")
+design <- read.csv("design.txt")
+####### classify genotypes ##########
 new_sample_file_table <- genotype_classification(results_median, design = design, 
                                                  callibrator_file_name = "/Users/gijsvanson/OneDrive - Prinses Maxima Centrum/General/SNP_Profiling/my_app/Calibrator/2022_03_17_calibrator.csv", method = "euclidean" )
 
 dev.off()
+####### print genotypes in a heatmap #######
 pdf(file= "nella_genotypes.pdf", width=30, height=15, pointsize=15)
 gplots::heatmap.2(as.matrix(new_sample_file_table[[2]][grep("Nella", rownames(new_sample_file_table[[2]])),]), trace="none", scale="none", 
           main="Genotype Nella", margins=c(10, 15), col=matrixcols3, 
@@ -120,13 +134,11 @@ gplots::heatmap.2(as.matrix(new_sample_file_table[[2]][grep("Nella", rownames(ne
           sepwidth=c(0.02,0.02), sepcolor="lightgray", colsep=1:ncol(new_sample_file_table[[2]]), 
           rowsep=1:nrow(new_sample_file_table[[2]]), keysize=0.5)
 dev.off()
+##### write genotypes to file #########
 write.table(new_sample_file_table[[1]], "Nella_genotypes.csv")
-
-
-
-design$ID
-
-
+##### view genotype from a vcf-file (from scRNA seq data) ##########
+genotype_LX469 <- system("bcftools query -r 3:42209771,5:140668624,6:87258847,7:139047751,8:51820490,9:113188426,10:7964835,11:74074281,12:67312686,13:49534116,14:55138318,15:51622465,16:4701044,17:3026098,18:62574499,19:10489766,21:42904255 -f '%CHROM %POS %AF %GT\n' run.vcf")
+##### make a new dataframe with all genotypes to perform clustering
 results_sc_snp <- data.frame("chromosome" = c(1:21), "0.bam_LX469" = c(NA, NA, 2, 1, NA, 1, NA, 
                                                                        2, NA, 2, NA, 2, NA, 1, 2,
                                                                        NA, NA, NA, NA, 2,2),
